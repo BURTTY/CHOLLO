@@ -1,0 +1,15 @@
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\bin\Debug\TOR ADBMS.exe.config
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\obj\Debug\TOR_ADBMS.Resources.resources
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\obj\Debug\TOR ADBMS.vbproj.GenerateResource.Cache
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\bin\Debug\TOR ADBMS.exe
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\bin\Debug\TOR ADBMS.pdb
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\bin\Debug\TOR ADBMS.xml
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\obj\Debug\TOR_ADBMS.Form1.resources
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\obj\Debug\TOR ADBMS.exe
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\obj\Debug\TOR ADBMS.xml
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\obj\Debug\TOR ADBMS.pdb
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\obj\Debug\TOR_ADBMS.Form2.resources
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\obj\Debug\TOR_ADBMS._3PROFESSOR_LOGIN.resources
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\obj\Debug\TOR_ADBMS.ADMIN_DASHBOARD.resources
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\obj\Debug\TOR ADBMS.vbproj.ResolveComReference.cache
+C:\Users\denni\Documents\FINAL PROJECT IN ADBMS\TOR ADBMS\TOR ADBMS\obj\Debug\TOR_ADBMS.PROFESSOR_DASHBOARD.resources
