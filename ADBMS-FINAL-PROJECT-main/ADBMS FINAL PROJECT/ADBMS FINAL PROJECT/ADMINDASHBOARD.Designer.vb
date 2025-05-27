@@ -70,6 +70,9 @@ Partial Class ADMINDASHBOARD
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cbShowPass = New System.Windows.Forms.CheckBox()
+        Me.btnadclear = New System.Windows.Forms.Button()
+        Me.btnadupdate = New System.Windows.Forms.Button()
+        Me.btnadback = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -192,27 +195,27 @@ Partial Class ADMINDASHBOARD
         'cln_username
         '
         Me.cln_username.Text = "USER NAME"
-        Me.cln_username.Width = 107
+        Me.cln_username.Width = 181
         '
         'cln_firstname
         '
         Me.cln_firstname.Text = "FIRST NAME"
-        Me.cln_firstname.Width = 119
+        Me.cln_firstname.Width = 175
         '
         'cln_middlename
         '
         Me.cln_middlename.Text = "MIDDLE NAME"
-        Me.cln_middlename.Width = 125
+        Me.cln_middlename.Width = 144
         '
         'ADM_LAST
         '
         Me.ADM_LAST.Text = "LAST NAME"
-        Me.ADM_LAST.Width = 109
+        Me.ADM_LAST.Width = 158
         '
         'cln_email
         '
         Me.cln_email.Text = "EMAIL"
-        Me.cln_email.Width = 168
+        Me.cln_email.Width = 201
         '
         'cln_address
         '
@@ -295,7 +298,7 @@ Partial Class ADMINDASHBOARD
         '
         'btnexit
         '
-        Me.btnexit.Location = New System.Drawing.Point(1188, 274)
+        Me.btnexit.Location = New System.Drawing.Point(1187, 355)
         Me.btnexit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnexit.Name = "btnexit"
         Me.btnexit.Size = New System.Drawing.Size(176, 61)
@@ -305,7 +308,7 @@ Partial Class ADMINDASHBOARD
         '
         'btndele
         '
-        Me.btndele.Location = New System.Drawing.Point(1188, 202)
+        Me.btndele.Location = New System.Drawing.Point(1187, 422)
         Me.btndele.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btndele.Name = "btndele"
         Me.btndele.Size = New System.Drawing.Size(176, 55)
@@ -497,11 +500,42 @@ Partial Class ADMINDASHBOARD
         Me.cbShowPass.Text = "SHOW PASSWORD"
         Me.cbShowPass.UseVisualStyleBackColor = True
         '
+        'btnadclear
+        '
+        Me.btnadclear.Location = New System.Drawing.Point(1186, 288)
+        Me.btnadclear.Name = "btnadclear"
+        Me.btnadclear.Size = New System.Drawing.Size(177, 59)
+        Me.btnadclear.TabIndex = 63
+        Me.btnadclear.Text = "CLEAR"
+        Me.btnadclear.UseVisualStyleBackColor = True
+        '
+        'btnadupdate
+        '
+        Me.btnadupdate.Location = New System.Drawing.Point(1187, 213)
+        Me.btnadupdate.Name = "btnadupdate"
+        Me.btnadupdate.Size = New System.Drawing.Size(177, 59)
+        Me.btnadupdate.TabIndex = 64
+        Me.btnadupdate.Text = "UPDATE"
+        Me.btnadupdate.UseVisualStyleBackColor = True
+        '
+        'btnadback
+        '
+        Me.btnadback.Location = New System.Drawing.Point(930, 388)
+        Me.btnadback.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnadback.Name = "btnadback"
+        Me.btnadback.Size = New System.Drawing.Size(176, 55)
+        Me.btnadback.TabIndex = 65
+        Me.btnadback.Text = "BACK"
+        Me.btnadback.UseVisualStyleBackColor = True
+        '
         'ADMINDASHBOARD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1447, 842)
+        Me.Controls.Add(Me.btnadback)
+        Me.Controls.Add(Me.btnadupdate)
+        Me.Controls.Add(Me.btnadclear)
         Me.Controls.Add(Me.cbShowPass)
         Me.Controls.Add(Me.txtsearch)
         Me.Controls.Add(Me.Label19)
@@ -589,4 +623,7 @@ Partial Class ADMINDASHBOARD
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents Label1 As Label
     Friend WithEvents cbShowPass As CheckBox
+    Friend WithEvents btnadclear As Button
+    Friend WithEvents btnadupdate As Button
+    Friend WithEvents btnadback As Button
 End Class

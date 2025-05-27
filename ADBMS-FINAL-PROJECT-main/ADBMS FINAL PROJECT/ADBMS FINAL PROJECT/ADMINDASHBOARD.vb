@@ -294,4 +294,109 @@
         End Try
     End Sub
 
+    Private Sub btnadclear_Click(sender As Object, e As EventArgs) Handles btnadclear.Click
+        clearFields()
+    End Sub
+
+    Private Sub btnadupdate_Click(sender As Object, e As EventArgs) Handles btnadupdate.Click
+        If Not ValidateFields() Then Exit Sub
+
+        Dim rs As New ADODB.Recordset
+        Try
+            If rs.State = 1 Then rs.Close()
+
+            rs.Open("SELECT * FROM [tbl-adminregister] WHERE ADM_USER='" & txtaduser.Text.Trim() & "'", cn, ADODB.CursorTypeEnum.adOpenKeyset, ADODB.LockTypeEnum.adLockOptimistic)
+
+            If rs.EOF Then
+                MsgBox("Admin user not found to update.", vbExclamation, "Not Found")
+                rs.Close()
+                Exit Sub
+            End If
+
+            Dim isChanged As Boolean = False
+
+            ' *** PASSWORD FIELD IS NEVER TOUCHED OR UPDATED ***
+
+            If rs.Fields("ADM_EMAIL").Value.ToString() <> txtademail.Text.Trim() Then
+                rs.Fields("ADM_EMAIL").Value = txtademail.Text.Trim()
+                isChanged = True
+            End If
+
+            If rs.Fields("ADM_FIRST").Value.ToString() <> txtadfirst.Text.Trim() Then
+                rs.Fields("ADM_FIRST").Value = txtadfirst.Text.Trim()
+                isChanged = True
+            End If
+
+            If rs.Fields("ADM_MIDDLE").Value.ToString() <> txtadmid.Text.Trim() Then
+                rs.Fields("ADM_MIDDLE").Value = txtadmid.Text.Trim()
+                isChanged = True
+            End If
+
+            If rs.Fields("ADM_LAST").Value.ToString() <> txtadlast.Text.Trim() Then
+                rs.Fields("ADM_LAST").Value = txtadlast.Text.Trim()
+                isChanged = True
+            End If
+
+            If rs.Fields("ADM_CONTACT").Value.ToString() <> txtadcon.Text.Trim() Then
+                rs.Fields("ADM_CONTACT").Value = txtadcon.Text.Trim()
+                isChanged = True
+            End If
+
+            If CDate(rs.Fields("ADM_BIRTHDATE").Value) <> dtpbirth.Value.Date Then
+                rs.Fields("ADM_BIRTHDATE").Value = dtpbirth.Value.Date
+                isChanged = True
+            End If
+
+            If rs.Fields("ADM_HOME").Value.ToString() <> txthome.Text.Trim() Then
+                rs.Fields("ADM_HOME").Value = txthome.Text.Trim()
+                isChanged = True
+            End If
+
+            If rs.Fields("ADM_STREET").Value.ToString() <> txtstreet.Text.Trim() Then
+                rs.Fields("ADM_STREET").Value = txtstreet.Text.Trim()
+                isChanged = True
+            End If
+
+            If rs.Fields("ADM_BRGY").Value.ToString() <> txtbrgy.Text.Trim() Then
+                rs.Fields("ADM_BRGY").Value = txtbrgy.Text.Trim()
+                isChanged = True
+            End If
+
+            If rs.Fields("ADM_MUNICITY").Value.ToString() <> txtmunicity.Text.Trim() Then
+                rs.Fields("ADM_MUNICITY").Value = txtmunicity.Text.Trim()
+                isChanged = True
+            End If
+
+            If rs.Fields("ADM_PROV").Value.ToString() <> txtprov.Text.Trim() Then
+                rs.Fields("ADM_PROV").Value = txtprov.Text.Trim()
+                isChanged = True
+            End If
+
+            If rs.Fields("ADM_ZIP").Value.ToString() <> txtzip.Text.Trim() Then
+                rs.Fields("ADM_ZIP").Value = txtzip.Text.Trim()
+                isChanged = True
+            End If
+
+            If isChanged Then
+                rs.Update()
+                MsgBox("Admin information updated successfully.", vbInformation, "Update")
+                clearFields()
+                loadAdminList()
+            Else
+                MsgBox("No changes detected to update.", vbInformation, "No Update")
+            End If
+
+            rs.Close()
+
+        Catch ex As Exception
+            MsgBox("Error updating data: " & ex.Message, vbCritical, "Error")
+            If rs.State = 1 Then rs.Close()
+        End Try
+    End Sub
+
+    Private Sub btnadback_Click(sender As Object, e As EventArgs) Handles btnadback.Click
+        Me.Hide()
+        Form2.Show()  ' Palitan mo ang ADMINLOGIN sa pangalan ng login form mo
+    End Sub
+
 End Class

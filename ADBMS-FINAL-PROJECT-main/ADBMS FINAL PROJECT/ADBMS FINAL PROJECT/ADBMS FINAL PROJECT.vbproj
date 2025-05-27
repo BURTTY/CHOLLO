@@ -113,6 +113,12 @@
     <Compile Include="PROF-LOGIN.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PROFESSOR_DASHBOARD.Designer.vb">
+      <DependentUpon>PROFESSOR_DASHBOARD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PROFESSOR_DASHBOARD.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ADMINDASHBOARD.resx">
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PROF-LOGIN.resx">
       <DependentUpon>PROF-LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROFESSOR_DASHBOARD.resx">
+      <DependentUpon>PROFESSOR_DASHBOARD.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
