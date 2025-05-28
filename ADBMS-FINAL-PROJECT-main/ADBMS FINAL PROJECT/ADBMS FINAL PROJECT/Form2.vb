@@ -35,4 +35,9 @@
         End If
     End Sub
 
+    Private Sub btnadback1_Click(sender As Object, e As EventArgs) Handles btnadback1.Click
+        Form1.Show()    ' Show Form1
+        Me.Hide()       ' Hide the current form
+    End Sub
+
 End Class

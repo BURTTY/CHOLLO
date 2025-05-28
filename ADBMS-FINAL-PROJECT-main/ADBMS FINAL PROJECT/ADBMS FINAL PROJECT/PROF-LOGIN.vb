@@ -79,4 +79,7 @@
         End If
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnprologexit.Click
+        end 
+    End Sub
 End Class

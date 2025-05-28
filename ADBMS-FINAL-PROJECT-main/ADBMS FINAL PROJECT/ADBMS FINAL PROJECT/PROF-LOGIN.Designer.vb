@@ -29,6 +29,7 @@ Partial Class PROF_LOGIN
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cbprofremember = New System.Windows.Forms.CheckBox()
+        Me.btnprologexit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label3
@@ -98,11 +99,21 @@ Partial Class PROF_LOGIN
         Me.cbprofremember.Text = "SHOW PASSWORD"
         Me.cbprofremember.UseVisualStyleBackColor = True
         '
+        'btnprologexit
+        '
+        Me.btnprologexit.Location = New System.Drawing.Point(12, 12)
+        Me.btnprologexit.Name = "btnprologexit"
+        Me.btnprologexit.Size = New System.Drawing.Size(73, 31)
+        Me.btnprologexit.TabIndex = 19
+        Me.btnprologexit.Text = "EXIT"
+        Me.btnprologexit.UseVisualStyleBackColor = True
+        '
         'PROF_LOGIN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(476, 300)
+        Me.Controls.Add(Me.btnprologexit)
         Me.Controls.Add(Me.cbprofremember)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnproflogin)
@@ -125,4 +136,5 @@ Partial Class PROF_LOGIN
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents cbprofremember As CheckBox
+    Friend WithEvents btnprologexit As Button
 End Class

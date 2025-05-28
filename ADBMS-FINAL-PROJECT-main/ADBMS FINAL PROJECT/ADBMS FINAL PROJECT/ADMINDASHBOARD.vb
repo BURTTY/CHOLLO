@@ -399,4 +399,7 @@
         Form2.Show()  ' Palitan mo ang ADMINLOGIN sa pangalan ng login form mo
     End Sub
 
+    Private Sub txtaduser_TextChanged(sender As Object, e As EventArgs) Handles txtaduser.TextChanged
+
+    End Sub
 End Class
